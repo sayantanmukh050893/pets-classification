@@ -69,8 +69,8 @@ async def analyze(request):
         animal = "cat"
     elif(str(prediction) in dogs):
         animal = "dog"
-        
-    return JSONResponse({'The above image is of a {} of breed {}'.format(animal,str(prediction))})
+    print(animal) 
+    return JSONResponse({'The above image is of a {}'.format(str(prediction))})
 
 
 if __name__ == '__main__':

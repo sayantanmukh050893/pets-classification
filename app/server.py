@@ -70,7 +70,7 @@ async def analyze(request):
     #elif(str(prediction) in dogs):
      #   animal = "dog"
     #print(animal) 
-    return JSONResponse({'The above image is of a {}'.format(str(prediction))})
+    return JSONResponse({'The above image is of a ',str(prediction)})
 
 
 if __name__ == '__main__':
